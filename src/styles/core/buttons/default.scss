@@ -26,7 +26,7 @@
       justify-content: center;
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       left: 19px;
@@ -43,7 +43,7 @@
 
   // VARIANTs
   &--sm &__text {
-    padding: 8px 9px;
+    padding: 9px 9px 7px;
   }
 
   // STATEs
