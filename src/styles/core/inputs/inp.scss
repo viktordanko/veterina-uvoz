@@ -1,0 +1,20 @@
+.inp {
+  margin: 0 0 10px;
+
+  @media ($mdUp) {
+    // VARIANTs
+    &--btn {
+      margin-bottom: 0;
+    }
+    &--btn &-text {
+      border-right-width: 0;
+      border-radius: 2px 0 0 2px;
+    }
+
+    &--btn .btn {
+      border: 1px solid $colorPrimary;
+      border-left-width: 0;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  &__text {
+    position: relative;
+    display: block;
+    padding: 17px 16px;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color $t, border-color $t, color $t;
+    text-transform: uppercase;
+    &.iconned {
+      display: flex;
+      justify-content: center;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 19px;
+      width: 16px;
+      height: 16px;
+      margin: -8px 0 0 -8px;
+      border: 2px solid;
+      border-radius: 8px;
+      border-top-color: transparent;
+      opacity: 0;
+      transition: opacity $t;
+    }
+  }
+
+  // VARIANTs
+  &--sm &__text {
+    padding: 8px 9px;
+  }
+
+  // STATEs
+  &:disabled,
+  &.is-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &.is-loading &__text {
+    &::after {
+      opacity: 1;
+      animation: animation-rotate 0.8s infinite linear;
+    }
+  }
+  &.is-loading .icon-svg {
+    opacity: 0;
+  }
+  &.is-loading {
+    pointer-events: none;
+  }
+
+  // HOVERs
+  &:hover &__text {
+    text-decoration: none;
+  }
+  &:hover &__text {
+    background-color: darken($colorSecondary, 10%);
+    color: $colorWhite;
+  }
+}

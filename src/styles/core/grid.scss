@@ -1,0 +1,127 @@
+.row-main {
+  @include clearfix();
+  position: relative;
+  margin: 0 auto;
+  padding: 0 $rowMainGutter;
+  max-width: $rowMainWidth;
+}
+.grid {
+  @extend %reset-ol;
+  @extend %grid;
+  margin-left: -$gridGutter;
+  margin-bottom: -$gridGutter;
+  &__cell {
+    @extend %reset-ol-li;
+    @extend %grid__cell;
+    position: relative;
+    border: $gridGutter solid transparent;
+    // hide the border in MS high contrast mode
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E");
+    border-width: 0 0 $gridGutter $gridGutter;
+    &--top {
+      align-self: flex-start;
+    }
+    &--middle {
+      align-self: center;
+    }
+    &--bottom {
+      align-self: flex-end;
+    }
+    &--eq {
+      display: flex;
+      > * {
+        flex: 1 1 auto;
+      }
+    }
+  }
+
+  // VARIANTs
+  &--scroll {
+    @extend %grid--scroll;
+  }
+  &--nowrap {
+    flex-wrap: nowrap;
+  }
+  &--middle {
+    align-items: center;
+  }
+  &--bottom {
+    align-items: flex-end;
+  }
+  &--center {
+    justify-content: center;
+  }
+  &--right {
+    justify-content: flex-end;
+  }
+  &--space-between {
+    justify-content: space-between;
+  }
+  &--list {
+    @extend %reset-ul;
+    & > li {
+      @extend %reset-ul-li;
+    }
+  }
+
+  // horizontal gutter spacing
+  &--x-0 {
+    margin-left: 0;
+  }
+  &--x-0 > &__cell {
+    border-left-width: 0;
+  }
+
+  &--x-sm {
+    margin-left: -$sm;
+  }
+  &--x-sm > &__cell {
+    border-left-width: $sm;
+  }
+
+  &--x-md {
+    margin-left: -$md;
+  }
+  &--x-md > &__cell {
+    border-left-width: $md;
+  }
+
+  &--x-lg {
+    margin-left: -$xxl;
+  }
+  &--x-lg > &__cell {
+    border-left-width: $xxl;
+  }
+
+  // vertical gutter spacing
+  &--y-0 {
+    margin-bottom: 0;
+  }
+  &--y-0 > &__cell {
+    border-bottom-width: 0;
+  }
+
+  &--y-sm {
+    margin-bottom: -$sm;
+  }
+  &--y-sm > &__cell {
+    border-bottom-width: $sm;
+  }
+
+  &--y-md {
+    margin-bottom: -$md;
+  }
+  &--y-md > &__cell {
+    border-bottom-width: $md;
+  }
+
+  &--y-lg {
+    margin-bottom: -$xxl;
+  }
+  &--y-lg > &__cell {
+    border-bottom-width: $xxl;
+  }
+}
+.size {
+  @include generateGridSize();
+}

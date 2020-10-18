@@ -1,0 +1,68 @@
+.u-color {
+	&-error {
+		color: $colorRed;
+		@at-root button#{&},
+			&[href] {
+			transition: color $t;
+			&:hover {
+				color: darken($colorRed, 20%);
+			}
+		}
+	}
+	&-warning {
+		color: $colorOrange;
+		@at-root button#{&},
+			&[href] {
+			transition: color $t;
+			&:hover {
+				color: darken($colorOrange, 20%);
+			}
+		}
+	}
+	&-success {
+		color: $colorSuccess;
+		@at-root button#{&},
+			&[href] {
+			transition: color $t;
+			&:hover {
+				color: darken($colorSuccess, 20%);
+			}
+		}
+	}
+	&-gray {
+		color: $colorGray;
+		@at-root button#{&},
+			&[href] {
+			transition: color $t;
+			&:hover {
+				color: darken($colorGray, 20%);
+			}
+		}
+	}
+
+	&-black {
+		color: $colorBlack;
+		@at-root button#{&},
+			&[href] {
+			transition: color $t;
+			&:hover {
+				color: darken($colorBlack, 20%);
+			}
+		}
+	}
+
+	&-red {
+		color: #f00;
+		@at-root button#{&},
+			&[href] {
+			transition: color $t;
+			&:hover {
+				color: darken(#f00, 20%);
+			}
+		}
+	}
+}
+
+button:disabled {
+	pointer-events: none;
+}

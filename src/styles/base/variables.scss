@@ -1,0 +1,110 @@
+// Colors
+$colorPrimary: #3b559a;
+$colorSecondary: #000000;
+
+$colorPrimaryLight: #eff6fa;
+$colorBlack: $colorSecondary;
+$colorWhite: #ffffff;
+$colorRed: #ff4b27;
+$colorGreen: #c4d93f;
+$colorSuccess: #4db72e;
+$colorOrange: #ff9018;
+$colorGray: #6d6d6d;
+
+$colorText: $colorSecondary;
+$colorBd: #0a319e;
+$colorBg: #dee3f1;
+$colorLink: $colorPrimary;
+$colorHover: $colorText;
+
+$colorFacebook: #3b5998;
+$colorTwitter: #1da1f2;
+$colorGoogle: #dd4b39;
+$colorYoutube: #ff0000;
+$colorLinkedIn: #0077b5;
+$colorInstagram: #c13584;
+$colorPinterest: #bd081c;
+
+// Sizes
+$xxs: 8px;
+$xs: 16px;
+$sm: 24px;
+$md: 32px;
+$lg: 40px;
+$xl: 48px;
+$xxl: 56px;
+$xxxl: 64px;
+$xxxxl: 96px;
+
+// Font
+$fontSystem: "Muli", sans-serif;
+$fontPrimary: $fontSystem;
+$fontSecondary: "Catamaran", sans-serif;
+$fontSize: 16px;
+$lineHeight: 24px / $fontSize;
+
+// Typography
+$typoSpaceVertical: 1.5em;
+
+// Grid
+$gridColumns: 12;
+$rowMainGutter: $sm;
+$gridGutter: $md;
+$rowMainWidth: 1024px + (2 * $sm);
+
+// Paths
+$imgPath: "/public/";
+$fontsPath: "/fonts/";
+
+// Inline json variables
+$webkit: "(-webkit-min-device-pixel-ratio: 0)";
+$retina: "(-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)";
+
+$breakpoints: (
+  "xs": "375px",
+  "sm": "480px",
+  "md": "750px",
+  "lg": "1000px",
+  "xl": "1346px",
+  "xxl": "1560px",
+);
+
+$xsUp: "min-width: 375px";
+$xsDown: "max-width: 374.98px";
+$smUp: "min-width: 480px";
+$smDown: "max-width: 479.98px";
+$mdUp: "min-width: 750px";
+$mdDown: "max-width: 749.98px";
+$lgUp: "min-width: 1000px";
+$lgDown: "max-width: 999.98px";
+$xlUp: "min-width: 1346px";
+$xlDown: "max-width: 1345.98px";
+$xxlUp: "min-width: 1560px";
+$xxlDown: "max-width: 1559.98px";
+
+$breakpointsVars: (
+  "xsUp": $xsUp,
+  "xsDown": $xsDown,
+  "smUp": $smUp,
+  "smDown": $smDown,
+  "mdUp": $mdUp,
+  "mdDown": $mdDown,
+  "lgUp": $lgUp,
+  "lgDown": $lgDown,
+  "xlUp": $xlUp,
+  "xlDown": $xlDown,
+  "xxlUp": $xlUp,
+  "xxlDown": $xlDown,
+);
+
+// Transitions
+$t: 0.3s;
+
+// SVGs
+$svgPrimaryColor: "#{$colorPrimary}";
+// prettier-ignore
+$svgBullet: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath fill='#{svg($svgPrimaryColor)}' d='M0 0h5v5H0z'/%3E%3C/svg%3E%0A";
+$svgSelect: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7.41'%3E%3Cpath d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z' fill='%230a319e'/%3E%3C/svg%3E";
+$svgArrowDown: "data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6L1.41 0z' fill='%23FFF'/%3E%3C/svg%3E";
+$svgTriangle: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='%23fff' d='M.857 1.714v8.572L6.571 6 .857 1.714zM0 12V0l8 6-8 6z'/%3E%3C/svg%3E%0A";
+$svgCheckbox: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M5 12.2l-5-5 1.4-1.4L5 9.4l7.6-7.6L14 3.2l-9 9z' fill='%23fff'/%3E%3C/svg%3E";

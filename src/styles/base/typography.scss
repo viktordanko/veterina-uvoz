@@ -1,0 +1,191 @@
+html {
+  font-family: $fontPrimary;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $colorText;
+}
+
+// Headings
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $fontSecondary;
+  font-weight: 900;
+  line-height: 1.35;
+  margin: 1.5em 0 0.75em;
+  color: $colorPrimary;
+}
+h1,
+.h1 {
+  font-size: 48px;
+}
+h2,
+.h2 {
+  font-size: 32px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 20px;
+  font-family: $fontPrimary;
+}
+h5,
+.h5 {
+  font-size: 18px;
+  font-family: $fontPrimary;
+}
+h6,
+.h6 {
+  font-size: 16px;
+  font-family: $fontPrimary;
+}
+
+// Paragraph
+p {
+  margin: 0 0 $typoSpaceVertical;
+}
+hr {
+  border: solid $colorBd;
+  border-width: 1px 0 0;
+  margin: $typoSpaceVertical 0;
+  height: 1px;
+  overflow: hidden;
+}
+
+// Blockquote
+blockquote {
+  margin: 0 0 $typoSpaceVertical;
+  padding: 0;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// Links
+a,
+.as-link {
+  color: $colorLink;
+  text-decoration: underline;
+  transition: color $t;
+  // -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  &:hover {
+    color: $colorHover;
+  }
+}
+
+// Lists
+ul,
+ol,
+dl {
+  margin: 0 0 $typoSpaceVertical;
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 0 0 0 20px;
+  margin: 0 0 ($typoSpaceVertical / 4);
+}
+ul {
+  li {
+    background-image: url($svgBullet);
+    background-position: 5px 0.5em;
+    background-repeat: no-repeat;
+    background-size: 4px 4px;
+  }
+}
+ol {
+  counter-reset: item;
+  li {
+    position: relative;
+    &::before {
+      content: counter(item) '.';
+      counter-increment: item;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  ol {
+    li {
+      &::before {
+        content: counter(item, lower-alpha) '.';
+      }
+    }
+  }
+}
+dt {
+  font-weight: bold;
+  margin: 0;
+}
+dd {
+  margin: 0 0 ($typoSpaceVertical / 2);
+  padding: 0;
+}
+
+// Tables
+table {
+  font-size: 14px;
+  width: 100%;
+  clear: both;
+  margin: 0 0 $typoSpaceVertical;
+  empty-cells: show;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  background-color: $colorWhite;
+}
+caption {
+  font-family: $fontSecondary;
+  font-weight: 900;
+  color: $colorText;
+  text-align: left;
+  padding: 0 0 10px;
+  caption-side: top;
+}
+td,
+th {
+  vertical-align: top;
+  text-align: left;
+  border-top: 1px solid $colorBg;
+  padding: $xs $sm;
+}
+thead th {
+  color: $colorPrimary;
+  background: $colorBg;
+}
+tfoot {
+  th,
+  td {
+    border-top-width: 2px;
+  }
+}
+
+// Image
+figure {
+  margin-bottom: $typoSpaceVertical;
+}
+figcaption {
+  margin-top: 0.5em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

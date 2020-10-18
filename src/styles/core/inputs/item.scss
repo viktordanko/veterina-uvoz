@@ -1,0 +1,117 @@
+.inp-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: (20/12);
+
+  &__inp {
+    position: absolute;
+    left: -5000px;
+  }
+  &__text {
+    display: block;
+    font-size: 12px;
+    line-height: (20/12);
+    border-radius: 2px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 2px;
+    }
+    &::before {
+      border: 1px solid $colorPrimary;
+      background: $colorWhite;
+      transition: border-color $t;
+    }
+    &::after {
+      background: $colorPrimary;
+      opacity: 0;
+      transition: opacity $t;
+    }
+    .page--app & {
+      &::before {
+        border-color: $colorGreen;
+      }
+      &::after {
+        background: $colorGreen;
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+  }
+  // MEDIA QUERIES
+  @media ($lgDown) {
+    &__text {
+      line-height: 15px;
+      border-radius: 3px;
+      &::before,
+      &::after {
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  // STATES
+  .has-error &__text {
+    &::before {
+      border-color: $colorRed;
+    }
+  }
+
+  &__inp:focus + &__text {
+    &::before {
+      border-color: $colorPrimary;
+      .page--app & {
+        border-color: $colorGreen;
+      }
+    }
+  }
+
+  &__inp:disabled + &__text {
+    color: rgba($colorText, 0.5);
+    cursor: default;
+    &::after {
+      background-color: $colorBg;
+    }
+  }
+
+  &__inp:checked + &__text {
+    &::after {
+      opacity: 1;
+      background-image: url($svgCheckbox);
+      background-position: top 50% right 50%;
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+    }
+  }
+  &--radio &__inp:checked + &__text {
+    &::after {
+      background-size: 10px 10px;
+    }
+  }
+
+  // VARIANTS & STATES
+  &--radio {
+    display: block;
+    text-align: center;
+  }
+  &--radio &__text {
+    &::before,
+    &::after {
+      border: none;
+      border-radius: 10px;
+      background-size: 9px 9px;
+    }
+  }
+}

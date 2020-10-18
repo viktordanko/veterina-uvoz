@@ -1,0 +1,24 @@
+$spacings: (
+  "0": 0,
+  "xxs": $xxs,
+  "xs": $xs,
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg,
+  "xl": $xl,
+  "xxl": $xxl,
+  "xxxl": $xxxl,
+  "xxxxl": $xxxxl,
+);
+
+@each $key, $value in $spacings {
+  .u-mt-#{$key} {
+    margin-top: $value;
+  }
+  .u-mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .u-pt-#{$key} {
+    padding-top: $value;
+  }
+}

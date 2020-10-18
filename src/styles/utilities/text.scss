@@ -1,0 +1,61 @@
+.u-text-left {
+	text-align: left;
+}
+.u-text-right {
+	text-align: right;
+}
+.u-text-center {
+	text-align: center;
+}
+.u-text-justify {
+	text-align: justify;
+}
+.u-text-nowrap {
+	white-space: nowrap;
+}
+.u-text-lowercase {
+	text-transform: lowercase;
+}
+.u-text-uppercase {
+	text-transform: uppercase;
+}
+.u-text-capitalize {
+	text-transform: capitalize;
+}
+.u-text-underline {
+	text-decoration: underline;
+}
+.u-text-no-underline {
+	text-decoration: none;
+}
+
+.u-text-truncate {
+	@include text-truncate();
+}
+.u-text-hide {
+	@include text-hide();
+}
+
+.u-font-sm {
+	font-size: 14px;
+}
+
+.u-font-light {
+	font-weight: 300;
+}
+.u-font-regular {
+	font-weight: normal;
+}
+.u-font-bold {
+	font-weight: bold;
+}
+
+.u-font-italic {
+	font-style: italic;
+}
+
+.text-bold {
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+}

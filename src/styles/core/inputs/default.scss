@@ -1,0 +1,24 @@
+%inp {
+  display: block;
+  border: 1px solid $colorBd;
+  padding: 14px 20px;
+  background-color: $colorWhite;
+  color: $colorText;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  appearance: none;
+  transition: background-color $t, border-color $t;
+
+  // STATEs
+  &:disabled {
+    background-color: rgba($color: $colorBg, $alpha: 0.6);
+  }
+  &:focus {
+    border-color: $colorBd;
+  }
+  .has-error & {
+    border-color: $colorRed;
+  }
+}
