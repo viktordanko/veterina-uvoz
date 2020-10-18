@@ -1,5 +1,5 @@
 import { RowMain } from "./Layout/RowMain";
-import { HeaderWrap } from "@components/HeaderWrap";
+import { HeaderWrap } from "components/HeaderWrap";
 import { Logo } from "./Logo";
 import { Menu } from "./Menu/Menu";
 import { MenuList } from "./Menu/MenuList";

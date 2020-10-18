@@ -1,5 +1,7 @@
-import Footer from '@components/Footer'
-import Header from '@components/Header'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import { Intro } from 'components/Intro'
+import { Main } from 'components/Main'
 import Head from 'next/head'
 
 export default function Home({ children }) {
@@ -9,13 +11,10 @@ export default function Home({ children }) {
         <title>Next Veterina Úvoz!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
-
-      <main>
-        {children}
-      </main>
-
+      <Main>
+        <Intro />
+      </Main>
       <Footer />
     </>
   )
