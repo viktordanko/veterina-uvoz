@@ -1,8 +1,10 @@
+import { AboutUs } from '@components/AboutUs'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import { Intro } from 'components/Intro'
 import { Main } from 'components/Main'
 import Head from 'next/head'
+
 
 export default function Home({ children }) {
   return (
@@ -14,6 +16,7 @@ export default function Home({ children }) {
       <Header />
       <Main>
         <Intro />
+        <AboutUs />
       </Main>
       <Footer />
     </>

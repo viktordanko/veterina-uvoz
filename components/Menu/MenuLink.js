@@ -1,7 +1,9 @@
+import Link from 'next/link'
 import classNames from "classnames";
 
 export const MenuLink = ({
   children,
+  href,
   isActive = false,
   isButton = false,
   ...anchorProps
@@ -14,14 +16,18 @@ export const MenuLink = ({
 
   if (isButton) {
     return (
-      <a className={classes} {...anchorProps}>
-        <span className="btn__text">{children}</span>
-      </a>
+      <Link href={href}>
+        <a className={classes} {...anchorProps}>
+          <span className="btn__text">{children}</span>
+        </a>
+      </Link>
     );
   }
   return (
-    <a className={classes} {...anchorProps}>
-      {children}
-    </a>
+    <Link href={href}>
+      <a className={classes} {...anchorProps}>
+        {children}
+      </a>
+    </Link>
   );
 };
