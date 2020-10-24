@@ -1,4 +1,5 @@
 import { AboutUs } from '@components/AboutUs'
+import { OpeningHours } from '@components/OpeningHours'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import { Intro } from 'components/Intro'
@@ -17,6 +18,7 @@ export default function Home({ children }) {
       <Main>
         <Intro />
         <AboutUs />
+        <OpeningHours />
       </Main>
       <Footer />
     </>

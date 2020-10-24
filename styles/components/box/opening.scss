@@ -1,0 +1,22 @@
+.b-opening {
+  padding: $sm;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0 rgba($colorBlack, 0.2);
+  margin-bottom: 0;
+  max-width: 50%;
+  margin-right: auto;
+  background-color: $colorWhite;
+  &__title {
+    text-align: center;
+  }
+  &__table {
+    th {
+      color: $colorPrimary;
+    }
+    th,
+    td {
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+  }
+}

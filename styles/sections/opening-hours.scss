@@ -1,0 +1,12 @@
+.s-opening-hours {
+  padding: 80px 0;
+  background-image: url("/kitty-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  align-items: center;
+  .row-main {
+    flex: 1;
+  }
+}
