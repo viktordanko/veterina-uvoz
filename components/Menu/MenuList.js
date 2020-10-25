@@ -20,7 +20,7 @@ const menuItems = [
   },
   {
     isPhoneButton: true,
-    label: '737 112 300',
+    label: 'Volejte',
     href: 'tel:+421737112300',
   },
 ];
