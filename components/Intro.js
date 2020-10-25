@@ -6,11 +6,11 @@ export const Intro = () => {
       <div className="b-intro__inner">
         <RowMain>
           <div className="b-intro__content">
-            <h2>
+            <h1>
               Veterina V.I.Pet
               <br />
               Very Important Pet
-            </h2>
+            </h1>
             <p>...protože každý mazlíček je důležitý</p>
           </div>
         </RowMain>
