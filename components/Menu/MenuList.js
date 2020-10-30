@@ -21,7 +21,7 @@ const menuItems = [
   {
     isPhoneButton: true,
     label: 'Volejte',
-    href: 'tel:+421737112300',
+    href: 'tel:+420737112300',
   },
 ];
 
