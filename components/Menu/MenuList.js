@@ -32,7 +32,7 @@ export const MenuList = () => {
         if (isPhoneButton) {
           return (
             <li className="m-main__item m-main__item--phone" key={id}>
-              <MenuLink isButton href={href}>
+              <MenuLink asBtn href={href}>
                 {label}
               </MenuLink>
             </li>
@@ -40,12 +40,11 @@ export const MenuList = () => {
         }
         return (
           <li className="m-main__item" key={id}>
-            <Link href="/[page]" as={`${href}`} passHref>
-              <MenuLink>{label}</MenuLink>
-            </Link>
+            <MenuLink href={href}>{label}</MenuLink>
           </li>
         );
       })}
     </ul>
   );
 };
+

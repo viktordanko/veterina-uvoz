@@ -5,18 +5,18 @@ export const MenuLink = ({
   children,
   href,
   isActive = false,
-  isButton = false,
+  asBtn = false,
   ...anchorProps
 }) => {
   const classes = classNames(
     "m-main__link",
     isActive ? "is-active" : "",
-    isButton ? "btn btn--sm" : ""
+    asBtn ? "btn btn--sm" : ""
   );
 
-  if (isButton) {
+  if (asBtn) {
     return (
-      <Link href={href}>
+      <Link href={href} passHref>
         <a className={classes} {...anchorProps}>
           <span className="btn__text">{children}</span>
         </a>
@@ -24,7 +24,7 @@ export const MenuLink = ({
     );
   }
   return (
-    <Link href={href}>
+    <Link href={href} passHref>
       <a className={classes} {...anchorProps}>
         {children}
       </a>
