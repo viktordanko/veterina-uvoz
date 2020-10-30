@@ -1,0 +1,7 @@
+.b-contact {
+  text-align: center;
+  font-weight: bold;
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
