@@ -1,7 +1,7 @@
 import { PawDivider } from './PawDivider';
 import { RowMain } from './Layout/RowMain';
 import { AboutUsSection } from './sections/AboutUsSection';
-import { MaxWidth } from './layout/MaxWidth';
+import { MaxWidth } from './Layout/MaxWidth';
 import { Text } from './Text';
 import { Annot } from './Annot';
 
