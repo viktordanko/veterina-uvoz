@@ -1,5 +1,8 @@
+$menuItems: 5;
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
 .m-main {
-  flex: 1 1 100%;
+  flex: 0 1 auto;
   &__list {
     @extend %reset-ul;
     display: flex;
@@ -8,9 +11,6 @@
   }
   &__item {
     @extend %reset-ul-li;
-    & + & {
-      margin-left: 10px;
-    }
   }
   &__link {
     padding: 20px 10px;
@@ -29,5 +29,70 @@
   // STATEs
   &__link:hover {
     color: $colorPrimary;
+  }
+
+  @media ($mdDown) {
+    flex: 0 0 auto;
+    &__list {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $colorWhite;
+      height: calc(100vh - 70px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: background-color $t, visibility $t $cubic, opacity $t $cubic;
+    }
+    &__item {
+      display: block;
+      width: 50vw;
+      flex: 0 0 auto;
+      text-align: center;
+      opacity: 0;
+      transition: opacity $t $cubic;
+      @for $i from 1 through $menuItems {
+        &:nth-child(#{$i}) {
+          transition-delay: #{0.3 - ($i * 0.07)}s;
+        }
+      }
+    }
+    &__link {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 20px;
+    }
+
+    // STATEs
+    .is-opened & {
+      &__list {
+        visibility: visible;
+        opacity: 1;
+      }
+      &__item {
+        opacity: 1;
+        @for $i from 1 through $menuItems {
+          &:nth-child(#{$i}) {
+            transition-delay: #{0.05 * $i + 0.3}s;
+          }
+        }
+      }
+    }
+  }
+
+  &__iten--phone {
+    padding-top: 10px;
+  }
+
+  @media ($mdUp) {
+    & + & {
+      margin-left: 10px;
+    }
   }
 }

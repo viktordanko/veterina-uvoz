@@ -1,15 +1,26 @@
 .header {
   position: fixed;
   top: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: $colorWhite;
   z-index: 10;
   box-shadow: 0 0 4px 0 rgba($colorBlack, 0.2);
   &__wrap {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
+  // RWD
+  @media ($mdDown) {
+    .logo__text {
+      display: none;
+    }
+  }
+  @media ($mdUp) {
+    padding: 20px 0;
+  }
+  // PE
   @supports (position: sticky) {
     position: sticky;
   }
