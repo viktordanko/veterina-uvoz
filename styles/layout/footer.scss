@@ -9,10 +9,29 @@
     justify-content: space-between;
   }
   &__info {
-    display: flex;
-    align-items: center;
     > * + * {
       margin: 0 0 0 20px;
+    }
+  }
+
+  // RWD
+  @media ($smDown) {
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__info {
+      text-align: center;
+      flex: 1 1 100%;
+      .logo {
+        justify-content: center;
+      }
+    }
+  }
+  @media ($mdUp) {
+    &__info {
+      display: flex;
+      align-items: center;
     }
   }
 }
