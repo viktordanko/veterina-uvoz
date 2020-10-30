@@ -1,3 +1,18 @@
 .footer {
-  //
+  padding: $md 0 0;
+  background-color: $colorWhite;
+  z-index: 10;
+  box-shadow: 0 0 10px 1px rgba($colorBlack, 0.1);
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    > * + * {
+      margin: 0 0 0 20px;
+    }
+  }
 }
