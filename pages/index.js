@@ -5,7 +5,7 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import { Intro } from 'components/Intro'
 import { Main } from 'components/Main'
-import { GMap } from 'components/GMap'
+import { Map } from 'components/Map'
 import Head from 'next/head'
 import { Contact } from '@components/Contact'
 
@@ -24,6 +24,7 @@ export default function Home({ children }) {
         <OpeningHours />
         <WhyUs />
         <Contact />
+        <Map />
       </Main>
       <Footer />
     </>
