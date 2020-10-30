@@ -2,8 +2,11 @@
   @include clearfix();
   position: relative;
   margin: 0 auto;
-  padding: 0 $rowMainGutter;
+  padding: 0 15px;
   max-width: $rowMainWidth;
+  @media ($mdUp) {
+    padding: 0 $rowMainGutter;
+  }
 }
 .grid {
   @extend %reset-ol;
