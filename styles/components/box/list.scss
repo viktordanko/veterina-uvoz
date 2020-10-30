@@ -1,0 +1,12 @@
+.b-list {
+  & > :last-child {
+    margin-bottom: 0;
+  }
+  &__item > * {
+    display: block;
+  }
+  &__icon {
+    text-align: center;
+    margin-bottom: $xs;
+  }
+}
