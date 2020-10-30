@@ -11,13 +11,25 @@ export const OpeningHoursTable = () => {
       <PawDivider heading="Ordinační hodiny" />
       <table className="b-opening__table">
         <tbody>
-          {days.map((day, index) => (
-            <tr key={index}>
-              <th>{day.name}</th>
-              <td>{day.from}</td>
-              <td>{day.to}</td>
-            </tr>
-          ))}
+          {days.map((day, index) => {
+            const { name, from, to, colSpan } = day;
+
+            if (colSpan) {
+              return (
+                <tr key={index}>
+                  <th>{name}</th>
+                  <td colSpan={colSpan}>{from}</td>
+                </tr>
+              )
+            }
+            return (
+              <tr key={index}>
+                <th>{name}</th>
+                <td colSpan={colSpan}>{from}</td>
+                <td>{to}</td>
+              </tr>
+            )
+          })}
         </tbody>
       </table>
     </div>

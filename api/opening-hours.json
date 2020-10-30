@@ -11,11 +11,13 @@
   },
   {
     "name": "St",
-    "from": "Pouze objednaní pacienti"
+    "from": "Pouze objednaní pacienti",
+    "colSpan": 2
   },
   {
     "name": "Čt",
-    "from": "Pouze objednaní pacienti"
+    "from": "Pouze objednaní pacienti",
+    "colSpan": 2
   },
   {
     "name": "Pá",
