@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { MenuLink } from './MenuLink';
 
 const menuItems = [
