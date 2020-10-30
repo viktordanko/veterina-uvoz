@@ -9,4 +9,11 @@
     text-align: center;
     margin-bottom: $xs;
   }
+
+  // RWD
+  @media ($mdDown) {
+    &__icon svg {
+      width: 40px;
+    }
+  }
 }

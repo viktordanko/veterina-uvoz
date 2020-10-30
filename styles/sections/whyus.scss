@@ -1,0 +1,19 @@
+.s-why-us {
+  @media ($mdDown) {
+    &#{&} {
+      margin-bottom: 0;
+    }
+    .c-list {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+    .b-list__item {
+      border-left-width: 0;
+    }
+  }
+  @media ($smDown) {
+    .c-list {
+      max-width: none;
+    }
+  }
+}

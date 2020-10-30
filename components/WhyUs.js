@@ -17,6 +17,7 @@ export const WhyUs = () => {
           <ListItem
             isGridCell
             center
+            // size={6}
             mdSize={3}
             listIcon={<TimeClock size={50} />}
             description="Jste pracující a nestíháte se&nbsp;svým&nbsp;miláčkem zajít k&nbsp;veterináři?"
@@ -24,6 +25,7 @@ export const WhyUs = () => {
           <ListItem
             isGridCell
             center
+            // size={6}
             mdSize={3}
             listIcon={<HourGlass size={50} />}
             description="Máte pocit, že Váš mazlíček je pouze další v&nbsp;řadě a&nbsp;veterinář na&nbsp;Vás nemá dostatek času?"
@@ -31,6 +33,7 @@ export const WhyUs = () => {
           <ListItem
             isGridCell
             center
+            // size={6}
             mdSize={3}
             listIcon={<Vet size={50} />}
             description="Nemáte rádi, když Vašeho miláčka pokaždé ošetřuje někdo&nbsp;jiný?​"
