@@ -9,17 +9,16 @@ export const GridListItem = ({
   lgSize,
   xlSize,
 }) => {
-  const className = classNames(
+  const classes = classNames(
     'grid__cell',
     size
-      ? `size--${size}${
-          size !== 'auto' &&
-          size !== 'side' &&
-          size !== 'content' &&
-          size !== 'autogrow'
-            ? '-12'
-            : ''
-        }`
+      ? `size--${size}${size !== 'auto' &&
+        size !== 'side' &&
+        size !== 'content' &&
+        size !== 'autogrow'
+        ? '-12'
+        : ''
+      }`
       : false,
     smSize ? `size--${smSize}${smSize !== 'auto' ? '-12' : ''}@sm` : false,
     mdSize ? `size--${mdSize}${mdSize !== 'auto' ? '-12' : ''}@md` : false,
@@ -28,5 +27,5 @@ export const GridListItem = ({
     align ? `grid__cell--${align}` : false
   );
 
-  return <li className={className}>{children}</li>;
+  return <li className={classes}>{children}</li>;
 };

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 
 export const Text = ({ children, horizontalAlign, color, size, isBold }) => {
-  const className = classNames(
+  const classes = classNames(
     horizontalAlign == 'center'
       ? 'u-text-center'
       : horizontalAlign == 'right'
@@ -13,5 +13,5 @@ export const Text = ({ children, horizontalAlign, color, size, isBold }) => {
     isBold ? 'u-font-bold' : false
   );
 
-  return <p className={className}>{children}</p>;
+  return <p className={classes}>{children}</p>;
 };

@@ -6,9 +6,9 @@ export const MaxWidth = ({
   variant = "6-12",
   isCenter = true,
 }) => {
-  const className = classNames(
+  const classes = classNames(
     variant ? `u-max-width--${variant}` : "",
     isCenter ? "u-mx-auto" : ""
   );
-  return <div className={className}>{children}</div>;
+  return <div className={classes}>{children}</div>;
 };

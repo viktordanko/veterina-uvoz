@@ -11,13 +11,13 @@ import { useOnClickOutside } from "../hooks/useOnClickOutside";
 export default function Header() {
 
 	const [menuOpened, setMenuOpened] = useState(false);
-	const className = classNames('header', menuOpened && 'is-opened');
+	const classes = classNames('header', menuOpened && 'is-opened');
 
 	const header = useRef(null);
 	useOnClickOutside(header, () => setMenuOpened(false));
 
 	return (
-		<header className={className} ref={header}>
+		<header className={classes} ref={header}>
 			<RowMain>
 				<HeaderWrap>
 					<Logo />

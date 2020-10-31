@@ -2,12 +2,12 @@ import classNames from "classnames";
 
 
 export const Annot = ({ children, spacing }) => {
-  const className = classNames(
+  const classes = classNames(
     'b-annot',
     spacing ? `u-mb-${spacing}` : false
   )
   return (
-    <div className={className}>
+    <div className={classes}>
       {children}
     </div>
   );

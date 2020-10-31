@@ -9,7 +9,7 @@ export const GridItem = ({
   lgSize,
   xlSize,
 }) => {
-  const className = classNames(
+  const classes = classNames(
     'grid__cell',
     size
       ? `size--${size}${size !== 'auto' &&
@@ -27,5 +27,5 @@ export const GridItem = ({
     align ? `grid__cell--${align}` : false
   );
 
-  return <div className={className}>{children}</div>;
+  return <div className={classes}>{children}</div>;
 };
