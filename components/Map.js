@@ -5,10 +5,10 @@ import { GMap } from './GMap';
 
 export const Map = () => {
   return (
-    <MapSection>
-      <RowMain>
+    <RowMain>
+      <MapSection>
         <GMap spacing="xxl" />
-      </RowMain>
-    </MapSection>
+      </MapSection>
+    </RowMain>
   );
 };

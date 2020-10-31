@@ -14,7 +14,7 @@ export const ListItem = ({
   center,
 }) => {
   const classes = classNames(
-    "b-list__item",
+    "c-list__item",
     isGridCell ? `grid__cell` : "",
     center ? `u-text-center` : "",
     size
@@ -34,8 +34,8 @@ export const ListItem = ({
   );
   return (
     <li className={classes}>
-      {listIcon && <span className="b-list__icon">{listIcon}</span>}
-      {description && <span className="b-list__desc">{description}</span>}
+      {listIcon && <span className="c-list__icon">{listIcon}</span>}
+      {description && <span className="c-list__desc">{description}</span>}
     </li>
   );
 };

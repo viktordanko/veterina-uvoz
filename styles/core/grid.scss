@@ -119,10 +119,16 @@
   }
 
   &--y-lg {
-    margin-bottom: -$xxl;
+    margin-bottom: -$xxl / 2;
+    @media ($mdUp) {
+      margin-bottom: -$xxl;
+    }
   }
   &--y-lg > &__cell {
-    border-bottom-width: $xxl;
+    border-bottom-width: $xxl / 2;
+    @media ($mdUp) {
+      border-bottom-width: $xxl;
+    }
   }
 }
 .size {

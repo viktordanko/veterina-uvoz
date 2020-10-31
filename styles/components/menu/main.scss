@@ -13,7 +13,7 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
     @extend %reset-ul-li;
   }
   &__link {
-    padding: 20px 10px;
+    padding: 30px 10px;
     font-weight: bold;
     font-size: 16px;
     color: $colorBlack;
@@ -23,6 +23,7 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
   // VARIANTs
   &__item--phone &__link {
+    margin-left: 10px;
     padding: 0;
   }
 
@@ -84,15 +85,18 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
         }
       }
     }
-  }
-
-  &__iten--phone {
-    padding-top: 10px;
+    &__item--phone {
+      padding-top: 10px;
+    }
   }
 
   @media ($mdUp) {
-    & + & {
+    &__item + &__item {
       margin-left: 10px;
+    }
+    &__item--phone &__link {
+      margin-left: 10px;
+      padding: 0;
     }
   }
 }

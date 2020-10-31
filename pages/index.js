@@ -19,7 +19,7 @@ export default function Home({ children }) {
       </Head>
       <Header />
       <Main>
-        <Intro />
+        <Intro spacing="xl" />
         <AboutUs />
         <OpeningHours />
         <WhyUs />

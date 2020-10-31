@@ -1,4 +1,5 @@
 .s-why-us {
+  padding-top: $xxl/2;
   @media ($mdDown) {
     &#{&} {
       margin-bottom: 0;
@@ -7,7 +8,7 @@
       max-width: 60%;
       margin: 0 auto;
     }
-    .b-list__item {
+    .c-list__item {
       border-left-width: 0;
     }
   }
@@ -15,5 +16,8 @@
     .c-list {
       max-width: none;
     }
+  }
+  @media ($mdUp) {
+    padding-top: $xl;
   }
 }

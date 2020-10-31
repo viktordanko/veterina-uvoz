@@ -6,7 +6,7 @@ import { OpeningHoursTable } from './OpeningHoursTable';
 
 export const OpeningHours = () => {
   return (
-    <OpeningHoursSection spacing="md">
+    <OpeningHoursSection>
       <RowMain>
         <OpeningHoursTable />
       </RowMain>

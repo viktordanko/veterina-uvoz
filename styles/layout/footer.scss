@@ -1,5 +1,5 @@
 .footer {
-  padding: $md 0 0;
+  padding: $xl/2 0 0;
   background-color: $colorWhite;
   z-index: 10;
   box-shadow: 0 0 10px 1px rgba($colorBlack, 0.1);
@@ -29,6 +29,7 @@
     }
   }
   @media ($mdUp) {
+    padding: $md 0 0;
     &__info {
       display: flex;
       align-items: center;

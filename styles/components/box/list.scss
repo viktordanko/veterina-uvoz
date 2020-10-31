@@ -1,4 +1,4 @@
-.b-list {
+.c-list {
   & > :last-child {
     margin-bottom: 0;
   }
@@ -12,6 +12,9 @@
 
   // RWD
   @media ($mdDown) {
+    & > :last-child {
+      border-bottom-width: 0;
+    }
     &__icon svg {
       width: 40px;
     }
