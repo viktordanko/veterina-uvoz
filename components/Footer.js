@@ -2,7 +2,7 @@ import { RowMain } from "./Layout/RowMain";
 import { Logo } from "./Logo";
 import { Text } from "./Text";
 
-export default function Footer() {
+export const Footer = () => {
 	return (
 		<footer className="footer">
 			<RowMain>
