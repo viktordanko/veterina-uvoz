@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -24,6 +25,18 @@ main {
   margin-top: 0;
 }
 
-@import "header";
-@import "footer";
-@import "main";
+// Little workaround for sticky header and smooth scroll
+section[id]::before {
+  content: '';
+  display: block;
+  height: calc(60px + 20px); // Sticky header's height + small margin
+  margin: calc(-60px - 20px) 0 0; // Postion the element on it's place
+  @media ($mdUp) {
+    height: calc(80px + #{$md}); // Sticky header's height + small margin
+    margin: calc(-80px - #{$md}) 0 0; // Postion the element on it's place
+  }
+}
+
+@import 'header';
+@import 'footer';
+@import 'main';

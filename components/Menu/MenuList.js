@@ -7,15 +7,15 @@ const menuItems = [
   },
   {
     label: 'O nás',
-    href: '#o-nas',
+    href: 'about-us',
   },
   {
     label: 'Služby',
-    href: '#sluzby',
+    href: 'services',
   },
   {
     label: 'Kontakt',
-    href: '#kontakt',
+    href: 'contact',
   },
   {
     isPhoneButton: true,

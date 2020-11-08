@@ -9,7 +9,7 @@ import { Annot } from './Annot';
 export const AboutUs = () => {
   return (
     <RowMain>
-      <AboutUsSection>
+      <AboutUsSection id="about-us">
         <PawDivider heading="Vítejte!" />
         <MaxWidth isCenter variant="10-12">
           <Annot spacing="xxxl">
