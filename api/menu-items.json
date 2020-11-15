@@ -8,8 +8,8 @@
     "href": "#about-us"
   },
   {
-    "label": "Služby",
-    "href": "#services"
+    "label": "Ordinační hodiny",
+    "href": "#open-hours"
   },
   {
     "label": "Kontakt",
@@ -18,6 +18,6 @@
   {
     "isPhoneButton": true,
     "label": "Volejte",
-    "href": "#tel:+420737112300"
+    "href": "tel:+420737112300"
   }
 ]

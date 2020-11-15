@@ -8,7 +8,7 @@ import { ContactInfo } from './ContactInfo';
 export const Contact = () => {
   return (
     <>
-      <div className="u-bg-primary-light u-pt-md">
+      <div className="u-bg-primary-light u-pt-xl">
         <RowMain>
           <ContactSection id="contact">
             <PawDivider heading="Kontaktní informace" />

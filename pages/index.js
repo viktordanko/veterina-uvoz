@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta charset="utf-8" />
         <title>Veterina V.I.Pet | MVDr. Klára Palicová</title>
         <meta
           key="description"
