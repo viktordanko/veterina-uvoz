@@ -11,6 +11,8 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
   }
   &__item {
     @extend %reset-ul-li;
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
   &__link {
     padding: 30px 10px;
