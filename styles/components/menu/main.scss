@@ -38,12 +38,12 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
     flex: 0 0 auto;
     &__list {
       position: absolute;
-      top: calc(100% + 10px);
+      top: calc(100% - 60px); // - header's height
       left: 0;
       right: 0;
       bottom: 0;
       background-color: $colorWhite;
-      height: calc(100vh - 60px); // - header's height
+      height: calc(100vh + 10px);
       display: flex;
       flex-direction: column;
       align-items: center;
