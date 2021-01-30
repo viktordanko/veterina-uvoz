@@ -1,11 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-class MyDocument extends Document {
-	static async getStaticProps(ctx) {
-		const staticProps = await Document.getStaticProps(ctx)
-		return { ...staticProps }
-	}
-
+export default class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="cs">
@@ -19,4 +14,7 @@ class MyDocument extends Document {
 	}
 }
 
-export default MyDocument
+MyDocument.getStaticProps = async (ctx) => {
+	const staticProps = await Document.getStaticProps(ctx)
+	return { ...staticProps }
+}
