@@ -39,11 +39,11 @@ $xxxl: 64px;
 $xxxxl: 96px;
 
 // Font
-$fontSystem: "Muli", sans-serif;
+$fontSystem: 'Muli', sans-serif;
 $fontPrimary: $fontSystem;
-$fontSecondary: "Catamaran", sans-serif;
+$fontSecondary: 'Catamaran', sans-serif;
 $fontSize: 16px;
-$lineHeight: math.div(24px, $fontSize);
+$lineHeight: calc(24 / 16);
 
 // Typography
 $typoSpaceVertical: 1.5em;
@@ -55,55 +55,55 @@ $gridGutter: $md;
 $rowMainWidth: 1024px + (2 * $sm);
 
 // Paths
-$imgPath: "/public/";
-$fontsPath: "/fonts/";
+$imgPath: '/public/';
+$fontsPath: '/fonts/';
 
 // Inline json variables
-$webkit: "(-webkit-min-device-pixel-ratio: 0)";
-$retina: "(-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)";
+$webkit: '(-webkit-min-device-pixel-ratio: 0)';
+$retina: '(-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)';
 
 $breakpoints: (
-  "xs": "375px",
-  "sm": "480px",
-  "md": "750px",
-  "lg": "1000px",
-  "xl": "1346px",
-  "xxl": "1560px",
+  'xs': '375px',
+  'sm': '480px',
+  'md': '750px',
+  'lg': '1000px',
+  'xl': '1346px',
+  'xxl': '1560px',
 );
 
-$xsUp: "min-width: 375px";
-$xsDown: "max-width: 374.98px";
-$smUp: "min-width: 480px";
-$smDown: "max-width: 479.98px";
-$mdUp: "min-width: 750px";
-$mdDown: "max-width: 749.98px";
-$lgUp: "min-width: 1000px";
-$lgDown: "max-width: 999.98px";
-$xlUp: "min-width: 1346px";
-$xlDown: "max-width: 1345.98px";
-$xxlUp: "min-width: 1560px";
-$xxlDown: "max-width: 1559.98px";
+$xsUp: 'min-width: 375px';
+$xsDown: 'max-width: 374.98px';
+$smUp: 'min-width: 480px';
+$smDown: 'max-width: 479.98px';
+$mdUp: 'min-width: 750px';
+$mdDown: 'max-width: 749.98px';
+$lgUp: 'min-width: 1000px';
+$lgDown: 'max-width: 999.98px';
+$xlUp: 'min-width: 1346px';
+$xlDown: 'max-width: 1345.98px';
+$xxlUp: 'min-width: 1560px';
+$xxlDown: 'max-width: 1559.98px';
 
 $breakpointsVars: (
-  "xsUp": $xsUp,
-  "xsDown": $xsDown,
-  "smUp": $smUp,
-  "smDown": $smDown,
-  "mdUp": $mdUp,
-  "mdDown": $mdDown,
-  "lgUp": $lgUp,
-  "lgDown": $lgDown,
-  "xlUp": $xlUp,
-  "xlDown": $xlDown,
-  "xxlUp": $xlUp,
-  "xxlDown": $xlDown,
+  'xsUp': $xsUp,
+  'xsDown': $xsDown,
+  'smUp': $smUp,
+  'smDown': $smDown,
+  'mdUp': $mdUp,
+  'mdDown': $mdDown,
+  'lgUp': $lgUp,
+  'lgDown': $lgDown,
+  'xlUp': $xlUp,
+  'xlDown': $xlDown,
+  'xxlUp': $xlUp,
+  'xxlDown': $xlDown,
 );
 
 // Transitions
 $t: 0.3s;
 
 // SVGs
-$svgPrimaryColor: "#{$colorPrimary}";
+$svgPrimaryColor: '#{$colorPrimary}';
 // prettier-ignore
 $svgBullet: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath fill='#{svg($svgPrimaryColor)}' d='M0 0h5v5H0z'/%3E%3C/svg%3E%0A";
 $svgSelect: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7.41'%3E%3Cpath d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z' fill='%230a319e'/%3E%3C/svg%3E";
