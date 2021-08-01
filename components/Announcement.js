@@ -8,8 +8,8 @@ export const Announcement = ({ children, spacing }) => {
   )
   return (
     <div className={classes}>
-      <div class="row-main">
-        <div class="b-announcement__text">
+      <div className="row-main">
+        <div className="b-announcement__text">
           {children}
         </div>
       </div>
