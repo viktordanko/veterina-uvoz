@@ -20,7 +20,7 @@
     "react-i18next": "^11.8.5"
   },
   "devDependencies": {
-    "sass": "^1.27.0",
-    "sass-loader": "^10.0.3"
+    "sass": "1.37.0",
+    "sass-loader": "12.1.0"
   }
 }
