@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .inp-text {
   @extend %inp;
   @at-root textarea#{&} {
@@ -11,12 +13,12 @@
   // VARIANTs
   &--sm {
     font-size: 12px;
-    line-height: (15/12);
+    line-height: math.div(15, 12);
     padding-top: 10px;
     padding-bottom: 10px;
     & + .inp-label {
       font-size: 12px;
-      line-height: (15/12);
+      line-height: math.div(15, 12);
     }
   }
   &--md {
@@ -39,7 +41,7 @@
   &:focus + .inp-label {
     width: auto;
     font-size: 11px;
-    line-height: (15/11);
+    line-height: math.div(15, 11);
     top: 0;
     left: 8px;
     color: $colorBd;

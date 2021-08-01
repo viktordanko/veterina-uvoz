@@ -119,13 +119,13 @@
   }
 
   &--y-lg {
-    margin-bottom: -$xxl / 2;
+    margin-bottom: -$xxl * 0.5;
     @media ($mdUp) {
       margin-bottom: -$xxl;
     }
   }
   &--y-lg > &__cell {
-    border-bottom-width: $xxl / 2;
+    border-bottom-width: $xxl * 0.5;
     @media ($mdUp) {
       border-bottom-width: $xxl;
     }

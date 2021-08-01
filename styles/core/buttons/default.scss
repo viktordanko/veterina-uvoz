@@ -42,6 +42,12 @@
   }
 
   // VARIANTs
+  &--bd &__text {
+    background-color: $colorWhite;
+    border: 2px solid $colorPrimary;
+    color: $colorPrimary;
+    transition: box-shadow $t 0s;
+  }
   &--sm &__text {
     padding: 9px 9px 7px;
   }
@@ -72,5 +78,10 @@
   &:hover &__text {
     background-color: darken($colorSecondary, 10%);
     color: $colorWhite;
+  }
+  &--bd:hover &__text {
+    background-color: $colorWhite;
+    color: $colorPrimary;
+    box-shadow: 0 0 16px 0 rgba($colorPrimary, 0.4);
   }
 }

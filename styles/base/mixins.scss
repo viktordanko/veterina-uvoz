@@ -1,4 +1,6 @@
 // Grid
+@use "sass:math";
+
 @mixin generateGridSize($breakpoints: $breakpoints, $columns: $gridColumns, $auto: true, $autoGrow: true) {
 	@if ($auto) {
 		&--auto {
@@ -16,8 +18,8 @@
 	}
 	@for $column from 1 to ($columns + 1) {
 		@at-root #{&}--#{$column}-#{$columns} {
-			flex-basis: percentage($column / $columns);
-			max-width: percentage($column / $columns);
+			flex-basis: percentage(math.div($column, $columns));
+			max-width: percentage(math.div($column, $columns));
 		}
 	}
 	@each $breakpoint, $value in $breakpoints {
@@ -43,8 +45,8 @@
 			@for $column from 1 to ($columns + 1) {
 				@at-root #{&}--#{$column}-#{$columns} {
 					@include suffix($breakpoint) {
-						flex-basis: percentage($column / $columns);
-						max-width: percentage($column / $columns);
+						flex-basis: percentage(math.div($column, $columns));
+						max-width: percentage(math.div($column, $columns));
 					}
 				}
 			}
@@ -55,7 +57,7 @@
 @mixin generateGridPush($breakpoints: $breakpoints, $columns: $gridColumns) {
 	@for $column from 1 to ($columns + 1) {
 		@at-root #{&}--#{$column}-#{$columns} {
-			left: percentage($column / $columns);
+			left: percentage(math.div($column, $columns));
 		}
 	}
 	@each $breakpoint, $value in $breakpoints {
@@ -63,7 +65,7 @@
 			@for $column from 1 to ($columns + 1) {
 				@at-root #{&}--#{$column}-#{$columns} {
 					@include suffix($breakpoint) {
-						left: percentage($column / $columns);
+						left: percentage(math.div($column, $columns));
 					}
 				}
 			}
@@ -74,7 +76,7 @@
 @mixin generateGridPull($breakpoints: $breakpoints, $columns: $gridColumns) {
 	@for $column from 1 to ($columns + 1) {
 		@at-root #{&}--#{$column}-#{$columns} {
-			left: percentage(-$column / $columns);
+			left: percentage(math.div(-$column, $columns));
 		}
 	}
 	@each $breakpoint, $value in $breakpoints {
@@ -82,7 +84,7 @@
 			@for $column from 1 to ($columns + 1) {
 				@at-root #{&}--#{$column}-#{$columns} {
 					@include suffix($breakpoint) {
-						left: percentage(-$column / $columns);
+						left: percentage(math.div(-$column, $columns));
 					}
 				}
 			}
@@ -202,16 +204,16 @@
 	height: 0;
 	border-style: solid;
 	@if ($direction == 'up') {
-		border-width: 0 ($width / 2) $height ($width / 2);
+		border-width: 0 ($width * 0.5) $height ($width * 0.5);
 		border-color: transparent transparent $color transparent;
 	} @else if ($direction == 'down') {
-		border-width: $height ($width / 2) 0 ($width / 2);
+		border-width: $height ($width * 0.5) 0 ($width * 0.5);
 		border-color: $color transparent transparent transparent;
 	} @else if ($direction == 'left') {
-		border-width: ($height / 2) $width ($height / 2) 0;
+		border-width: ($height * 0.5) $width ($height * 0.5) 0;
 		border-color: transparent $color transparent transparent;
 	} @else if ($direction == 'right') {
-		border-width: ($height / 2) 0 ($height / 2) $width;
+		border-width: ($height * 0.5) 0 ($height * 0.5) $width;
 		border-color: transparent transparent transparent $color;
 	} @else if ($direction == 'up-left') {
 		border-width: $height $width 0 0;

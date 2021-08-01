@@ -1,4 +1,6 @@
 // Colors
+@use "sass:math";
+
 $colorPrimary: #3b559a;
 $colorSecondary: #000000;
 
@@ -41,7 +43,7 @@ $fontSystem: "Muli", sans-serif;
 $fontPrimary: $fontSystem;
 $fontSecondary: "Catamaran", sans-serif;
 $fontSize: 16px;
-$lineHeight: 24px / $fontSize;
+$lineHeight: math.div(24px, $fontSize);
 
 // Typography
 $typoSpaceVertical: 1.5em;

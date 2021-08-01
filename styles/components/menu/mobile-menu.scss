@@ -1,9 +1,9 @@
 .m-mobile-menu {
   position: relative;
+  box-sizing: content-box;
   padding-right: 40px;
   color: $colorText;
   font-size: 18px;
-  box-sizing: content-box;
   font-weight: bold;
   &::before {
     content: attr(data-text);

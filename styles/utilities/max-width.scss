@@ -1,5 +1,7 @@
+@use "sass:math";
+
 @for $i from 1 through 11 {
   .u-max-width--#{$i}-12 {
-    max-width: round((($rowMainWidth - $rowMainGutter * 2) / 12) * $i);
+    max-width: round(math.div($rowMainWidth - $rowMainGutter * 2, 12) * $i);
   }
 }

@@ -105,7 +105,7 @@ dl {
 }
 li {
   padding: 0 0 0 20px;
-  margin: 0 0 ($typoSpaceVertical / 4);
+  margin: 0 0 ($typoSpaceVertical * 0.25);
 }
 ul {
   li {
@@ -140,7 +140,7 @@ dt {
   margin: 0;
 }
 dd {
-  margin: 0 0 ($typoSpaceVertical / 2);
+  margin: 0 0 ($typoSpaceVertical * 0.5);
   padding: 0;
 }
 

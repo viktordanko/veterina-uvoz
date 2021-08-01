@@ -1,13 +1,13 @@
 $spacings: (
   '0': 0,
-  'xs': $xs / 2,
-  'sm': $sm / 2,
+  'xs': $xs * 0.5,
+  'sm': $sm * 0.5,
   'md': $md,
-  'lg': $lg / 2,
-  'xl': $xl / 2,
-  'xxl': $xxl / 2,
-  'xxxl': $xxxl / 2,
-  'xxxxl': $xxxxl / 2,
+  'lg': $lg * 0.5,
+  'xl': $xl * 0.5,
+  'xxl': $xxl * 0.5,
+  'xxxl': $xxxl * 0.5,
+  'xxxxl': $xxxxl * 0.5,
 );
 
 $spacingsDesktop: (
