@@ -8,6 +8,7 @@ import { Main } from 'components/Main'
 import { Map } from 'components/Map'
 import Head from 'next/head'
 import { Contact } from '@components/Contact'
+import { Announcement } from '@components/Announcement'
 
 
 export default function Home() {
@@ -46,6 +47,9 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <Announcement>
+        V termínu <strong>7. 8 - 14. 8. 2021</strong> bude ordinace <strong>zavřená</strong>.
+      </Announcement>
       <Header />
       <Main>
         <Intro spacing="xl" />
