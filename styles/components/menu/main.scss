@@ -1,4 +1,4 @@
-$menuItems: 5;
+$menuItems: 6;
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
 .m-main {
@@ -69,6 +69,9 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
       width: 100%;
       padding: 15px 20px;
       font-size: 20px;
+    }
+    &__item--lang {
+      margin-top: 30px;
     }
 
     // STATEs

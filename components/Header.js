@@ -75,7 +75,7 @@ export const Header = () => {
 									</a>
 								</Link>
 							</li>
-							<li className="m-main__item">
+							<li className="m-main__item m-main__item--lang">
 								<LocaleSwitcher />
 							</li>
 						</ul>
