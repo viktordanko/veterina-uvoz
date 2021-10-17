@@ -8,10 +8,10 @@ export const LocaleSwitcher = () => {
 	const otherLocales = locales.filter((locale) => locale !== activeLocale);
 
 	return (
-		otherLocales.map((locale) => {
+		otherLocales.map((locale, idx) => {
 			const { pathname, query, asPath } = router;
 			return (
-				<Link href={{ pathname, query }} as={asPath} locale={locale}>
+				<Link href={{ pathname, query }} as={asPath} locale={locale} key={idx}>
 					<a className="btn btn--lang">
 						<span className="btn__inner">
 							{locale === 'en-US' ? locale.replace('en-US', 'EN') : locale.toUpperCase()}
