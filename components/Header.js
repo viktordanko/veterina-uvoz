@@ -7,6 +7,7 @@ import { Logo } from "./Logo";
 import { Menu } from "./Menu/Menu";
 import { MenuButton } from "./Menu/MenuButton";
 import menuItems from '../api/menu-items.json';
+import { LocaleSwitcher } from './LocaleSwitcher';
 
 
 export const Header = () => {
@@ -69,6 +70,9 @@ export const Header = () => {
 									</li>
 								);
 							})}
+							<li className="m-main__item">
+								<LocaleSwitcher />
+							</li>
 						</ul>
 						<MenuButton menuOpened={menuOpened} setMenuOpened={setMenuOpened} />
 					</Menu >

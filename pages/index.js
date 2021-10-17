@@ -8,10 +8,11 @@ import { Main } from 'components/Main'
 import { Map } from 'components/Map'
 import Head from 'next/head'
 import { Contact } from '@components/Contact'
-import { Announcement } from '@components/Announcement'
+// import { Announcement } from '@components/Announcement'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -63,3 +64,11 @@ export default function Home() {
     </>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
+
+export default Home;
