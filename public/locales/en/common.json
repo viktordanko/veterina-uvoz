@@ -33,5 +33,8 @@
     "first": "You can't go to the vet after the workday, because all of the vets are already closed.",
     "second": "Do you feel that your pet is only next in line and the vet does not have enough time for you?",
     "third": "You don't like when you pet is being cared for by someone else every time."
+  },
+  "contact": {
+    "title": "Contact"
   }
 }
