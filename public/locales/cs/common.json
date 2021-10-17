@@ -1,4 +1,13 @@
 {
+  "header": {
+    "menuItems": {
+      "intro": "Úvod",
+      "aboutUs": "O nás",
+      "openingHours": "Ordinační hodiny",
+      "contact": "Kontakt",
+      "callUs": "Volejte"
+    }
+  },
   "intro": {
     "desc": "...protože každý mazlíček je důležitý"
   }

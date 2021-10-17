@@ -1,0 +1,14 @@
+{
+  "header": {
+    "menuItems": {
+      "intro": "Intro",
+      "aboutUs": "About",
+      "openingHours": "Office hours",
+      "contact": "Contact",
+      "callUs": "Call us"
+    }
+  },
+  "intro": {
+    "desc": "...because every pet is important"
+  }
+}
