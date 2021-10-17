@@ -1,4 +1,8 @@
 {
+  "metas": {
+    "content": "Veterinární ordinace V.I.Pet na Úvoze, Brno",
+    "desc": "...protože každý mazlíček je důležitý"
+  },
   "header": {
     "menuItems": {
       "intro": "Úvod",

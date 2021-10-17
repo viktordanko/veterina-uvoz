@@ -1,4 +1,8 @@
 {
+  "metas": {
+    "content": "Veterinary surgery V.I.Pet, Brno - Úvoz",
+    "desc": "...because every pet is important"
+  },
   "header": {
     "menuItems": {
       "intro": "Intro",
