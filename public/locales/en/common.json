@@ -10,5 +10,11 @@
   },
   "intro": {
     "desc": "...because every pet is important"
+  },
+  "about": {
+    "welcome": "Welcome!",
+    "first": "My name is Klára Palicová and my dog is my indispensable partner and darling in my life. Since 2013, I have been dealing with veterinary medicine, especially for dogs and cats. In my professional life I worked mainly at NON-STOP clinics where I saw and treated a wide range of cases",
+    "second": "I will use my knowledge and experience in the treatment of your four-legged companions. I will take care of them as if they were my own during favorable opening hours, even on weekends.",
+    "third": "We will solve the problems of your pets together and in case of the need for a narrowly-specialized examination, I will arrange an order to a specialist to the best possible satisfaction of you and your pets - because it's all about them…"
   }
 }

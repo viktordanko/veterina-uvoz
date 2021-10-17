@@ -10,5 +10,11 @@
   },
   "intro": {
     "desc": "...protože každý mazlíček je důležitý"
+  },
+  "about": {
+    "welcome": "Vítejte!",
+    "first": "Jmenuji se Klára Palicová a můj pes je pro mě v životě mým nepostradatelným parťákem a miláčkem. Od roku 2013 se věnuji veterinární medicíně zejména psů a koček. V profesním životě jsem pracovala převážně na NON-STOP klinikách, kde jsem viděla a ošetřila široké spektrum případů.",
+    "second": "Své vědomosti a zkušenosti využiji při léčbě Vašich čtyřnohých společníků. Budu se jim věnovat s péčí, jakoby byli moji vlastní v příznivé otevírací době a to i víkendech.",
+    "third": "Problémy Vašich mazlíčků budeme řešit společně a v případě nutnosti úzce-specializovaného vyšetření zajistím objednání ke specialistovi, k co možná nejlepší spokojenosti Vás i Vašich miláčků - protože o ně tady kráčí…"
   }
 }
