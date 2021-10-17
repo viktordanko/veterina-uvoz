@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^3.9.2",
     "classnames": "^2.2.6",
     "next": "^10.0.0",
     "next-i18next": "^8.9.0",
