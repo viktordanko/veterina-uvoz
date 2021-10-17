@@ -27,5 +27,11 @@
     "saturday": "So",
     "sunday": "Ne",
     "booked": "Pouze objednaní pacienti"
+  },
+  "features": {
+    "title": "Proč k nám?",
+    "first": "Jste pracující a nestíháte se svým miláčkem zajít k veterináři?",
+    "second": "Máte pocit, že Váš mazlíček je pouze další v řadě a veterinář na Vás nemá dostatek času?",
+    "third": "Nemáte rádi, když Vašeho miláčka pokaždé ošetřuje někdo jiný?"
   }
 }
