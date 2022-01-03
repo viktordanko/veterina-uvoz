@@ -8,7 +8,7 @@ import { Main } from 'components/Main'
 import { Map } from 'components/Map'
 import Head from 'next/head'
 import { Contact } from '@components/Contact'
-// import { Announcement } from '@components/Announcement'
+import { Announcement } from '@components/Announcement'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
@@ -50,9 +50,9 @@ const Home = () => {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      {/* <Announcement>
-        V termínu <strong>7. 8 - 14. 8. 2021</strong> bude ordinace <strong>zavřená</strong>.
-      </Announcement> */}
+      <Announcement>
+        V termínu <strong>4. 1 - 18. 1. 2022</strong> je ordinace <strong>zavřená</strong>.
+      </Announcement>
       <Header />
       <Main>
         <Intro spacing="xl" />

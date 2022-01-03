@@ -26,7 +26,7 @@
       justify-content: center;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       left: 19px;
@@ -46,11 +46,11 @@
     background-color: $colorWhite;
     border: 2px solid $colorPrimary;
     color: $colorPrimary;
-    padding: 7px 16px 5px;
+    padding: 7px 16px;
     transition: box-shadow $t 0s;
   }
   &--sm &__text {
-    padding: 9px 9px 7px;
+    padding: 9px 9px;
   }
 
   // STATEs
