@@ -27,7 +27,7 @@ export const OpeningHoursTable = () => {
           </tr>
           <tr>
             <th>{t('openHours.wednesday')}</th>
-            <td colSpan="2">{t('openHours.booked')}</td>
+            <td colSpan="2">{t('openHours.closed')}</td>
           </tr>
           <tr>
             <th>{t('openHours.thursday')}</th>

@@ -30,7 +30,8 @@
     "friday": "Pi",
     "saturday": "So",
     "sunday": "Ne",
-    "booked": "Pouze objednaní pacienti"
+    "booked": "Pouze objednaní pacienti",
+    "closed": "ZAVŘENO"
   },
   "features": {
     "title": "Proč k nám?",

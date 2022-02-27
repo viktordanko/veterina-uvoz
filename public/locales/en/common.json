@@ -30,7 +30,8 @@
     "friday": "Fr",
     "saturday": "Sa",
     "sunday": "Su",
-    "booked": "Only booked patients"
+    "booked": "Only booked patients",
+    "closed": "CLOSED"
   },
   "features": {
     "title": "Why to choose us?",
