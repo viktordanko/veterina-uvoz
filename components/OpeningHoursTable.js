@@ -35,7 +35,7 @@ export const OpeningHoursTable = () => {
           </tr>
           <tr>
             <th>{t('openHours.friday')}</th>
-            <td colSpan="2" className="u-color-red">Zavřeno</td>
+            <td colSpan="2">Zavřeno</td>
             {/* <td>9:00 - 11:00</td>
             <td>19:00 - 20:00</td> */}
           </tr>
