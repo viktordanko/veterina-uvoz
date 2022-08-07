@@ -47,21 +47,21 @@ export const Header = () => {
 							</li>
 							<li className="m-main__item">
 								<Link href="#about-us" passHref>
-									<a className="m-main__link">
+									<a className="m-main__link" onClick={closeMenu}>
 										{t('header.menuItems.aboutUs')}
 									</a>
 								</Link>
 							</li>
 							<li className="m-main__item">
 								<Link href="#open-hours" passHref>
-									<a className="m-main__link">
+									<a className="m-main__link" onClick={closeMenu}>
 										{t('header.menuItems.openingHours')}
 									</a>
 								</Link>
 							</li>
 							<li className="m-main__item">
 								<Link href="#contact" passHref>
-									<a className="m-main__link">
+									<a className="m-main__link" onClick={closeMenu}>
 										{t('header.menuItems.contact')}
 									</a>
 								</Link>
