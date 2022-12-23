@@ -2,11 +2,11 @@ import React from 'react';
 import classNames from 'classnames';
 import { RowMain } from "./Layout/RowMain";
 import { Text } from "./Text";
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 
 export const Intro = ({ spacing }) => {
   const classes = classNames('b-intro', spacing ? `u-mb-${spacing}` : false)
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div className={classes}>
@@ -18,7 +18,8 @@ export const Intro = ({ spacing }) => {
             <br />
             Very Important Pet
           </h1>
-          <Text isBold>{t('intro.desc')}</Text>
+          <Text isBold>...protože každý mazlíček je důležitý</Text>
+          {/* <Text isBold>{t('intro.desc')}</Text> */}
         </div>
       </RowMain>
     </div>

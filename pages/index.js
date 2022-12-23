@@ -9,12 +9,13 @@ import { Map } from 'components/Map'
 import Head from 'next/head'
 import { Contact } from '@components/Contact'
 import { Announcement } from '@components/Announcement'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'react-i18next'
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// import { useTranslation } from 'react-i18next'
 
 
 const Home = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+
   return (
     <>
       <Head>
@@ -23,18 +24,21 @@ const Home = () => {
         <meta
           key="description"
           name="description"
-          content={t('metas.content')}
+          content="Veterinární ordinace V.I.Pet na Úvoze, Brno"
+        // content={t('metas.content')}
         />
         <meta key="og:type" property="og:type" content="website" />
         <meta
           key="og:title"
           property="og:title"
-          content={t('metas.content')}
+          content="Veterinární ordinace V.I.Pet na Úvoze, Brno"
+        // content={t('metas.content')}
         />
         <meta
           key="og:description"
           property="og:description"
-          content={t('metas.desc')}
+          content="...protože každý mazlíček je důležitý"
+        // content={t('metas.desc')}
         />
         <meta
           key="og:image"
@@ -67,10 +71,10 @@ const Home = () => {
   )
 }
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...await serverSideTranslations(locale, ['common']),
-  },
-})
+// export const getStaticProps = async ({ locale }) => ({
+//   props: {
+//     ...await serverSideTranslations(locale, ['common']),
+//   },
+// })
 
 export default Home;

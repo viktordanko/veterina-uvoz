@@ -6,8 +6,8 @@ import { HeaderWrap } from "components/HeaderWrap";
 import { Logo } from "./Logo";
 import { Menu } from "./Menu/Menu";
 import { MenuButton } from "./Menu/MenuButton";
-import { LocaleSwitcher } from './LocaleSwitcher';
-import { useTranslation } from 'react-i18next';
+// import { LocaleSwitcher } from './LocaleSwitcher';
+// import { useTranslation } from 'react-i18next';
 
 
 export const Header = () => {
@@ -29,7 +29,7 @@ export const Header = () => {
 	}, [])
 
 	const classes = classNames('header', menuOpened && 'is-opened');
-	const { t } = useTranslation();
+	// const { t } = useTranslation();
 
 	return (
 		<header className={classes}>
@@ -41,28 +41,32 @@ export const Header = () => {
 							<li className="m-main__item">
 								<Link href="/" passHref>
 									<a className="m-main__link" onClick={closeMenu}>
-										{t('header.menuItems.intro')}
+										Úvod
+										{/* {t('header.menuItems.intro')} */}
 									</a>
 								</Link>
 							</li>
 							<li className="m-main__item">
 								<Link href="#about-us" passHref>
 									<a className="m-main__link" onClick={closeMenu}>
-										{t('header.menuItems.aboutUs')}
+										O nás
+										{/* {t('header.menuItems.aboutUs')} */}
 									</a>
 								</Link>
 							</li>
 							<li className="m-main__item">
 								<Link href="#open-hours" passHref>
 									<a className="m-main__link" onClick={closeMenu}>
-										{t('header.menuItems.openingHours')}
+										Ordinační hodiny
+										{/* {t('header.menuItems.openingHours')} */}
 									</a>
 								</Link>
 							</li>
 							<li className="m-main__item">
 								<Link href="#contact" passHref>
 									<a className="m-main__link" onClick={closeMenu}>
-										{t('header.menuItems.contact')}
+										Kontakt
+										{/* {t('header.menuItems.contact')} */}
 									</a>
 								</Link>
 							</li>
@@ -70,14 +74,15 @@ export const Header = () => {
 								<Link href="tel:+420737112300">
 									<a className="btn btn--sm">
 										<span className="btn__text">
-											{t('header.menuItems.callUs')}
+											Volejte
+											{/* {t('header.menuItems.callUs')} */}
 										</span>
 									</a>
 								</Link>
 							</li>
-							<li className="m-main__item m-main__item--lang">
+							{/* <li className="m-main__item m-main__item--lang">
 								<LocaleSwitcher />
-							</li>
+							</li> */}
 						</ul>
 						<MenuButton menuOpened={menuOpened} setMenuOpened={setMenuOpened} />
 					</Menu >
