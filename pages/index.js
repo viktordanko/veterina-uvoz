@@ -50,9 +50,9 @@ const Home = () => {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      {/* <Announcement>
-        V termínu <strong>22. 8 - 28. 8. 2022</strong> je ordinace <strong>zavřená</strong>.
-      </Announcement> */}
+      <Announcement>
+        V termínu <strong>23. 12 - 30. 12. 2022</strong> je ordinace <strong>zavřená</strong>.
+      </Announcement>
       <Header />
       <Main>
         <Intro spacing="xl" />
