@@ -19,13 +19,13 @@ export const OpeningHoursTable = () => {
           <tr>
             {/* <th>{t('openHours.monday')}</th> */}
             <th>Po</th>
-            <td >9:00 - 11:00</td>
+            <td></td>
             <td>15:00 - 20:00</td>
           </tr>
           <tr>
             {/* <th>{t('openHours.tuesday')}</th> */}
             <th>Út</th>
-            <td>9:00 - 11:00</td>
+            <td></td>
             <td>15:00 - 20:00</td>
           </tr>
           <tr>
@@ -37,14 +37,12 @@ export const OpeningHoursTable = () => {
           <tr>
             <th>Čt</th>
             <td colSpan="2">Pouze objednaní pacienti</td>
-            {/* <th>{t('openHours.thursday')}</th>
-            <td colSpan="2">{t('openHours.booked')}</td> */}
           </tr>
           <tr>
             {/* <th>{t('openHours.friday')}</th> */}
             <th>Pá</th>
-            <td>9:00 - 11:00</td>
-            <td>19:00 - 20:00</td>
+            <td></td>
+            <td>16:00 - 20:00</td>
           </tr>
           <tr>
             <th>So</th>
