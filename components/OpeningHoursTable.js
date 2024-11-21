@@ -1,19 +1,18 @@
-import classNames from 'classnames';
+import classNames from "classnames";
 // import { useTranslation } from 'react-i18next';
-import { PawDivider } from './PawDivider';
-
+import { PawDivider } from "./PawDivider";
 
 export const OpeningHoursTable = () => {
-  const classes = classNames('b-opening');
+  const classes = classNames("b-opening");
   // const { t } = useTranslation();
 
   return (
     <div className={classes}>
       <PawDivider heading="Ordinační hodiny" />
       {/* <PawDivider heading={t('openHours.title')} /> */}
-      {/* <p className="u-text-center u-color-red">
-        Dne <strong>23. 12. 2022 - 30. 12. 2022</strong> je ordinace zavřená.
-      </p> */}
+      <p className="u-text-center u-color-red">
+        <strong>Z důvodu karantény</strong> je ordinace dočasně zavřená.
+      </p>
       <table className="b-opening__table">
         <tbody>
           <tr>
