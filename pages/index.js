@@ -64,7 +64,7 @@ const Home = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Announcement>
-        Do<strong>20. 1. 2025</strong> je ordinace <strong>zavřená</strong>.
+        Do <strong>20. 1. 2025</strong> je ordinace <strong>zavřená</strong>.
       </Announcement>
       <Header />
       <Main>
