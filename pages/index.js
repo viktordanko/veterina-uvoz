@@ -24,20 +24,20 @@ const Home = () => {
           key="description"
           name="description"
           content="Veterinární ordinace V.I.Pet na Úvoze, Brno"
-          // content={t('metas.content')}
+        // content={t('metas.content')}
         />
         <meta key="og:type" property="og:type" content="website" />
         <meta
           key="og:title"
           property="og:title"
           content="Veterinární ordinace V.I.Pet na Úvoze, Brno"
-          // content={t('metas.content')}
+        // content={t('metas.content')}
         />
         <meta
           key="og:description"
           property="og:description"
           content="...protože každý mazlíček je důležitý"
-          // content={t('metas.desc')}
+        // content={t('metas.desc')}
         />
         <meta key="og:image" property="og:image" content="/og-vipet.png" />
         <link
@@ -63,9 +63,11 @@ const Home = () => {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      {/*
       <Announcement>
         Do <strong>20. 1. 2025</strong> je ordinace <strong>zavřená</strong>.
       </Announcement>
+      */}
       <Header />
       <Main>
         <Intro spacing="xl" />
