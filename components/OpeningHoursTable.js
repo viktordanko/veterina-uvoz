@@ -10,10 +10,11 @@ export const OpeningHoursTable = () => {
     <div className={classes}>
       <PawDivider heading="Ordinační hodiny" />
       {/* <PawDivider heading={t('openHours.title')} /> */}
-      {/* <PawDivider heading={t('openHours.title')} /> */}
+      {/*
       <p className="u-text-center u-color-red">
-        Do <strong>24. 2. 2025</strong> je ordinace zavřená.
+        Do <strong>20. 1. 2025</strong> je ordinace zavřená.
       </p>
+      */}
       <table className="b-opening__table">
         <tbody>
           <tr>
