@@ -25,7 +25,6 @@
   }
   @media ($mdUp) {
     padding: $sm;
-    margin-right: auto;
     &__table th,
     &__table td {
       padding: $xs $sm;
@@ -33,6 +32,6 @@
   }
   @media ($lgUp) {
     max-width: 50%;
-    margin-left: 0;
+    margin-inline: auto;
   }
 }
